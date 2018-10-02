@@ -5,18 +5,17 @@
 open project.greenfoot to launch game
 
 ## Some Game Screenshots
-![Alt text](game_screenshot1.png?raw=true "HearthscapeGO")
-![Alt text](game_screenshot2.png?raw=true "HearthscapeGO")
-![Alt text](game_screenshot3.png?raw=true "HearthscapeGO")
+![Alt text](screenshot0.png?raw=true "HearthscapeGO")
+![Alt text](screenshot1.png?raw=true "HearthscapeGO")
+![Alt text](screenshot2.png?raw=true "HearthscapeGO")
+![Alt text](screenshot3.png?raw=true "HearthscapeGO")
 
 ## Controls
-
-### Player Movement
 ```
-A - Left
-D - Right
-W - Jump
-Q - Punch
-E - Kick
-F - shoot
+Mouse - Shoot
+Spacebar - Mine resources
+W - Move up
+A - Move left
+S - Move down
+D - Move right
 ```

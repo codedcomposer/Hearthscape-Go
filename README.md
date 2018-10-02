@@ -4,12 +4,6 @@
 
 open project.greenfoot to launch game
 
-## Some Game Screenshots
-![Alt text](screenshot0.png?raw=true "HearthscapeGO")
-![Alt text](screenshot1.png?raw=true "HearthscapeGO")
-![Alt text](screenshot2.png?raw=true "HearthscapeGO")
-![Alt text](screenshot3.png?raw=true "HearthscapeGO")
-
 ## Controls
 ```
 Mouse - Shoot
@@ -19,3 +13,9 @@ A - Move left
 S - Move down
 D - Move right
 ```
+
+## Some Game Screenshots
+![Alt text](screenshot0.png?raw=true "HearthscapeGO")
+![Alt text](screenshot1.png?raw=true "HearthscapeGO")
+![Alt text](screenshot2.png?raw=true "HearthscapeGO")
+![Alt text](screenshot3.png?raw=true "HearthscapeGO")

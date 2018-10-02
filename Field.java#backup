@@ -1,0 +1,185 @@
+import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import java.util.*;
+import java.lang.*;
+/**
+ * Write a description of class Field here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+public class Field extends World
+{
+    private GreenfootImage bgImage = new GreenfootImage("field.png");
+    int tempX=0;
+    int tempY=0;
+    int xCo=0;
+    int yCo=0;
+    boolean collideLeft=false;
+    boolean collideRight=false;
+    boolean collideUp=false;
+    boolean collideDown=false;
+    boolean done=false;
+    boolean doneBar=false;
+    ArrayList itemList=new ArrayList();
+    boolean treeDrop=false;
+    String characterDir="down";
+    boolean closeTree=false;
+    int xMove=0;
+    int yMove=0;
+    /**
+     * Constructor for objects of class Field.
+     * 
+     */
+    public Field()
+    {    
+        // Create a new world with 600x600 cells with a cell size of 1x1 pixels.
+        super(800, 600, 1); 
+
+        prepare();
+    }
+
+    public void act(){
+        showDoIt();
+    }
+
+    public void fieldMove(int xIncrease, int yIncrease) {
+        
+        xMove=xIncrease;
+        yMove=yIncrease;
+        tempX+=xCo-(xCo+xIncrease);
+        xCo+=xIncrease;
+        tempY+=yCo-(yCo+yIncrease);
+        yCo+=yIncrease;
+        if(tempX>=600 || tempX<=-600){
+            tempX=0;
+        }
+        if(tempY>=600 || tempY<=-600){
+            tempY=0;
+        }
+        getBackground().drawImage(bgImage, tempX, tempY);
+        getBackground().drawImage(bgImage, tempX + bgImage.getWidth(), tempY);
+        getBackground().drawImage(bgImage, tempX - bgImage.getWidth(), tempY);
+        getBackground().drawImage(bgImage,tempX , tempY-600);
+        getBackground().drawImage(bgImage, tempX, tempY+600);
+        getBackground().drawImage(bgImage,tempX+bgImage.getWidth() , tempY-600);
+        getBackground().drawImage(bgImage,tempX-bgImage.getWidth() , tempY-600);
+        getBackground().drawImage(bgImage,tempX+bgImage.getWidth() , tempY+600);
+        getBackground().drawImage(bgImage,tempX-bgImage.getWidth() , tempY+600);
+        
+
+    }
+    public void resetMoveValue(){
+        xMove=0;
+        yMove=0;
+    }
+    public int getXCo(){
+        return xCo;
+    }
+
+    public int getYCo(){
+        return yCo;
+    }
+
+    public void collides(String dir){
+        if(dir.equals("left")){
+            collideLeft=true;
+        }
+
+        if(dir.equals("right")){
+            collideRight=true;
+        }
+        if(dir.equals("up")){
+            collideUp=true;
+        }
+        if(dir.equals("down")){
+            collideDown=true;
+        }
+    }
+
+    public void resetCollides(String dir){
+        if(dir.equals("left")){
+            collideLeft=false;
+        }
+        if(dir.equals("right")){
+            collideRight=false;
+        }
+        if(dir.equals("up")){
+            collideUp=false;
+        }
+        if(dir.equals("down")){
+            collideDown=false;
+        }
+    }
+
+    public void paintOrder(Class c){
+        setPaintOrder(c);
+    }
+
+    public void showDoIt(){
+        if(Greenfoot.isKeyDown(" ") && !done && !doneBar && closeTree){
+            DoIt doit = new DoIt();
+            addObject(doit, 680, 128);
+            Bar bar = new Bar();
+            addObject(bar,682,246);
+        }
+        
+    }
+    public void assignDrop(String str){
+        if(str.equals("SmallTree")){
+            
+        }
+    }
+    public void spawn(String item, int x, int y){
+        if(item.equals("OakLog")){
+            OakLogSmall oakLogsmall = new OakLogSmall(x,y);
+            
+        }
+    }
+    
+    /**
+     * Prepare the world for the start of the program. That is: create the initial
+     * objects and add them to the world.
+     */
+    private void prepare()
+    {
+        Graves graves = new Graves();
+        addObject(graves, 297, 302);
+        Text text = new Text();
+        addObject(text, 36, 569);
+        removeObject(text);
+        Y y = new Y();
+        addObject(y, 203, 566);
+        X x = new X();
+        addObject(x, 44, 569);
+        SmallTree smallTree=new SmallTree(50,50);
+        addObject(smallTree,50,50);
+        HUD hud = new HUD();
+        addObject(hud, 452, 445);
+
+        hud.setLocation(681, 452);
+
+        DoIt doit = new DoIt();
+        addObject(doit, 416, 377);
+
+        removeObject(doit);
+        Avatar avatar= new Avatar();
+        addObject(avatar, 680, 145);       
+
+        AvatarBack avatarBack = new AvatarBack();
+        addObject(avatarBack, 682, 150);
+
+        setPaintOrder(Avatar.class);
+        setPaintOrder(DoIt.class);
+        setPaintOrder(Bar.class);
+        ValueBar valuebar = new ValueBar();
+        addObject(valuebar, 377, 412);
+        Bomber bomber = new Bomber();
+        addObject(bomber, 515, 215);
+        bomber.setLocation(471, 481);
+        bomber.setLocation(549, 354);
+        removeObject(valuebar);
+        removeObject(bomber);
+        Bomber bomber2 = new Bomber();
+        addObject(bomber2, 504, 448);
+    }
+}

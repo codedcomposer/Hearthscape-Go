@@ -15,13 +15,13 @@ public class StartButton extends Actor
     public void act() 
     {
         if (Greenfoot.mouseClicked (this)) {
-            Greenfoot.setWorld (new Field());
+            Greenfoot.setWorld (new House());
 
             
             
-            //GreenfootSound welcome = new GreenfootSound("welcometomyinn.mp3");
-            //welcome.setVolume(80);
-            //welcome.play();
+            GreenfootSound welcome = new GreenfootSound("welcometomyinn.mp3");
+            welcome.setVolume(80);
+            welcome.play();
         }
     }    
 }

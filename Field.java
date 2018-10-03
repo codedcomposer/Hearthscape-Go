@@ -478,9 +478,6 @@ public class Field extends World
         //setPaintOrder(Abilities.class);
         setPaintOrder(SpellSlot.class);
         setPaintOrder(EquippedSpell.class);
-        setPaintOrder(AbilityQ.class);
-        setPaintOrder(AbilityE.class);
-        setPaintOrder(AbilityR.class);
 
         setPaintOrder(BuckshotIcon.class);
         setPaintOrder(QuickdrawIcon.class);
@@ -694,13 +691,7 @@ public class Field extends World
         Text text = new Text();
         addObject(text, 36, 569);
         removeObject(text);
-        Y y = new Y();
-        addObject(y, 203, 566);
-        X x = new X();
-        addObject(x, 44, 569);
 
-        addObject(new mouseX(),44,469);
-        addObject(new mouseY(),203,469);
         prepareResources();
 
         HUD hud = new HUD();
@@ -765,31 +756,10 @@ public class Field extends World
         //addObject(ability,680,235);
         //ability.setLocation(560,200);
 
-        AbilityQ abilityq = new AbilityQ();
-        addObject(abilityq,600,250);
-        abilityq.setLocation(600,235);
-
-        AbilityE abilitye = new AbilityE();
-        addObject(abilitye,685,250);
-        abilitye.setLocation(680,235);
-
-        AbilityR abilityr = new AbilityR();
-        addObject(abilityr,760,250);
-        abilityr.setLocation(760,235);
 
         // 600 275
 
-        BuckshotIcon buckshoticon = new BuckshotIcon();
-        addObject(buckshoticon,760,250);
-        buckshoticon.setLocation(600,275);
 
-        QuickdrawIcon quickdrawicon = new QuickdrawIcon();
-        addObject(quickdrawicon,680,250);
-        quickdrawicon.setLocation(680,275);
-
-        FirestrikeIcon firestrikeicon = new FirestrikeIcon();
-        addObject(firestrikeicon,700,250);
-        firestrikeicon.setLocation(760,275);
 
         for(int i=0;i<28;i++){
             items[i]="trans";

@@ -1,7 +1,7 @@
 #BlueJ class context
 comment0.params=
 comment0.target=Field()
-comment0.text=\n\ Constructor\ for\ objects\ of\ class\ Field.\n\ \n
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Field.\r\n\ \r\n
 comment1.params=
 comment1.target=void\ act()
 comment10.params=item\ index
@@ -60,7 +60,7 @@ comment34.params=type
 comment34.target=void\ addHUD(java.lang.String)
 comment35.params=
 comment35.target=void\ prepare()
-comment35.text=\n\ Prepare\ the\ world\ for\ the\ start\ of\ the\ program.\ That\ is\:\ create\ the\ initial\n\ objects\ and\ add\ them\ to\ the\ world.\n
+comment35.text=\r\n\ Prepare\ the\ world\ for\ the\ start\ of\ the\ program.\ That\ is\:\ create\ the\ initial\r\n\ objects\ and\ add\ them\ to\ the\ world.\r\n
 comment4.params=pos
 comment4.target=void\ swapItems(int)
 comment5.params=

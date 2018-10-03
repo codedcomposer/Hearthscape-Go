@@ -297,25 +297,25 @@ public class Graves extends Actor
         if(direction("upleft")&& !field.collideUp && !field.collideLeft){
 
             animate("walk","upleft");
-            field.fieldMove(-5,-5);
+            field.fieldMove(-1,-1);
 
         }
         else if(direction("upright") && !field.collideUp && !field.collideRight){
 
             animate("walk","upright");
-            field.fieldMove(5,-5);
+            field.fieldMove(1,-1);
 
         }
         else if(direction("downleft") && !field.collideDown && !field.collideLeft){
 
             animate("walk","downleft");
-            field.fieldMove(-5,5);
+            field.fieldMove(-1,1);
 
         }
         else if(direction("downright") && !field.collideDown && !field.collideRight){
 
             animate("walk","downright");
-            field.fieldMove(5,5);
+            field.fieldMove(1,1);
 
         }
         else if (direction("up") && !field.collideUp){

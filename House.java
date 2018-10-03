@@ -29,8 +29,6 @@ public class House extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(480, 352, 1); 
         addObject(new GravesHouse(),110,60);
-        addObject(new HouseX(),300,150);
-        addObject(new HouseY(),350,150);
         addObject(new Kid(),300,200);
         addObject(new Sofa(),190,270);
         addObject(new Piano(),275,100);

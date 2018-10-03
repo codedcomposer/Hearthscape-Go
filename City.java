@@ -35,8 +35,6 @@ public class City extends World
         addObject(new Barricade(-616,-215,"left"),0,0);
         addObject(new VaultHoleCity(),0,0);
         addObject(new VaultCity(),0,0);
-        addObject(new CityX(),300,150);
-        addObject(new CityY(),350,150);
         setPaintOrder(VaultHoleCity.class);
         setPaintOrder(VaultCity.class);
         setPaintOrder(Barricade.class);

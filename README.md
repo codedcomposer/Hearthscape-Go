@@ -15,7 +15,7 @@ D - Move right
 ```
 
 ## Some Game Screenshots
-![Alt text](screenshot0.png?raw=true "HearthscapeGO")
-![Alt text](screenshot1.png?raw=true "HearthscapeGO")
-![Alt text](screenshot2.png?raw=true "HearthscapeGO")
-![Alt text](screenshot3.png?raw=true "HearthscapeGO")
+![Alt text](screenshots/screenshot0.png?raw=true "HearthscapeGO")
+![Alt text](screenshots/screenshot1.png?raw=true "HearthscapeGO")
+![Alt text](screenshots/screenshot2.png?raw=true "HearthscapeGO")
+![Alt text](screenshots/screenshot3.png?raw=true "HearthscapeGO")

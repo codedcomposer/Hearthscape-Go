@@ -1,0 +1,27 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ act()
+comment0.text=\r\n\ Act\ -\ do\ whatever\ the\ Graves\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+comment1.params=
+comment1.target=void\ checkSpell()
+comment10.params=
+comment10.target=void\ stand()
+comment11.params=
+comment11.target=void\ standNoDir()
+comment2.params=spell
+comment2.target=void\ useSpell(java.lang.String)
+comment3.params=
+comment3.target=void\ checkSpecAbility()
+comment4.params=
+comment4.target=void\ firestrikerino()
+comment5.params=
+comment5.target=void\ buckshoterino()
+comment6.params=
+comment6.target=void\ checkKey()
+comment7.params=action\ direction
+comment7.target=void\ animate(java.lang.String,\ java.lang.String)
+comment8.params=dir
+comment8.target=boolean\ direction(java.lang.String)
+comment9.params=
+comment9.target=void\ direction2()
+numComments=12

@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.params=p
+comment0.target=ItemSlot(int)
+comment1.params=
+comment1.target=void\ act()
+comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ ItemSlot\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+comment2.params=
+comment2.target=void\ checkEquip()
+comment3.params=
+comment3.target=void\ type()
+comment4.params=
+comment4.target=void\ checkMoved()
+comment5.params=
+comment5.target=void\ fullTransparency()
+numComments=6

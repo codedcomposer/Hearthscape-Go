@@ -1,10 +1,11 @@
 # Hearthscape GO
-
+```
 *The game no longer works as well as it should, unless you never upgraded greenfoot since V2.4.0
 *ONLY use on Greenfoot 2.4.2 (Any newer, or older versions may will not work)
 *Discrepancies between greenfoot version will sometimes result in the character not being able to move, reopen .jar
 
 open HearthscapeGo.jar to launch game
+```
 
 ## Controls
 ```

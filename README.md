@@ -2,7 +2,7 @@
 
 *ONLY use on Greenfoot 2.4.2 (Any newer, or older versions may will not work)
 
-open project.greenfoot to launch game
+open HearthscapeGo.jar to launch game
 
 ## Controls
 ```
@@ -12,6 +12,9 @@ W - Move up
 A - Move left
 S - Move down
 D - Move right
+Q - Special ability 1
+E - Special ability 2
+*to pick your special abilities, go to the spellbook menu
 ```
 
 ## Some Game Screenshots
@@ -19,3 +22,5 @@ D - Move right
 ![Alt text](screenshots/screenshot1.png?raw=true "HearthscapeGO")
 ![Alt text](screenshots/screenshot2.png?raw=true "HearthscapeGO")
 ![Alt text](screenshots/screenshot3.png?raw=true "HearthscapeGO")
+![Alt text](screenshots/screenshot4.png?raw=true "HearthscapeGO")
+![Alt text](screenshots/screenshot5.png?raw=true "HearthscapeGO")
